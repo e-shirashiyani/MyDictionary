@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_google_pixel_3xl"
+    tools:context=".controller.fragment.StartFragment">
+
+    <TextView
+        android:id="@+id/title2"
+        android:layout_width="302dp"
+        android:layout_height="74dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="144dp"
+        android:layout_marginRight="16dp"
+
+        android:fontFamily="@font/alfa_slab_one"
+        android:text="Dictionary"
+        android:textColor="#E9E4EA"
+        android:textSize="50sp" />
+
+    <View
+        android:id="@+id/viewA"
+        android:layout_width="130dp"
+        android:layout_height="112dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="71dp"
+        android:background="@drawable/ic_a_" />
+
+    <View
+        android:id="@+id/viewB"
+        android:layout_width="124dp"
+        android:layout_height="103dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="125dp"
+        android:layout_toRightOf="@+id/viewA"
+        android:background="@drawable/ic_b" />
+
+    <View
+        android:id="@+id/viewC"
+        android:layout_width="127dp"
+        android:layout_height="99dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="142dp"
+        android:layout_marginBottom="74dp"
+        android:layout_toRightOf="@+id/viewB"
+        android:background="@drawable/ic_c" />
+
+    <View
+        android:id="@+id/viewE"
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="303dp"
+        android:layout_marginBottom="99dp"
+        android:layout_toRightOf="@+id/viewC"
+        android:background="@drawable/ic_d" />
+
+    <View
+        android:id="@+id/viewD"
+        android:layout_width="97dp"
+        android:layout_height="88dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="232dp"
+        android:layout_marginBottom="58dp"
+        android:layout_toRightOf="@+id/viewE"
+        android:background="@drawable/ic_e" />
+
+
+</RelativeLayout>
+<!--
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.fragment.StartFragment">
+
+    &lt;!&ndash; TODO: Update blank fragment layout &ndash;&gt;
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+</FrameLayout>-->

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.fragment.DictionaryListFragment"
+    android:padding="10dp"
+    android:background="#FFB698C5">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginStart="@dimen/fab_margin"
+        android:layout_marginLeft="@dimen/fab_margin"
+        android:layout_marginTop="@dimen/fab_margin"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:layout_marginRight="@dimen/fab_margin"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:src="@drawable/ic_baseline_add_circle_24"
+        app:backgroundTint="#FFB698C5" />
+  <!--  <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/translate_from_form"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+
+        android:textColorHint="#530B4D"
+        app:boxStrokeColor="#530B4D"
+        app:prefixTextColor="#530B4D">
+
+        <AutoCompleteTextView
+            android:id="@+id/filled_exposed_dropdown_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Translate From"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/translate_TO_form"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/translate_from_form"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#530B4D"
+        app:boxStrokeColor="#530B4D"
+        app:prefixTextColor="#530B4D"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/filled_exposed_dropdown_to"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Translate TO"
+            android:inputType="none" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/search_form"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="328dp"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="66dp"
+        android:layout_marginTop="10dp"
+        android:hint="Search"
+        android:textColorHint="#530B4D"
+        app:boxStrokeColor="#530B4D"
+        app:prefixTextColor="#530B4D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageButton
+        android:id="@+id/imageButtonSearch"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+
+
+        android:background="@drawable/ic_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_dictionary_list"
+        android:layout_width="399dp"
+        android:layout_height="506dp"
+        android:layout_below="@id/search_form"
+        android:layout_marginTop="139dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>

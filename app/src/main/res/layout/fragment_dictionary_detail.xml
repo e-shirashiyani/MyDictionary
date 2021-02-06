@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.fragment.DictionaryDetailFragment"
+    android:background="#FFB698C5">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="304dp"
+        android:background="@drawable/ic_wavepuprple" />
+
+    <TextView
+        android:id="@+id/textView_titleWord"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="22dp"
+        android:textColor="#C499CC"
+        android:textSize="45sp"
+        tools:text="word" />
+
+    <ImageButton
+        android:id="@+id/volume"
+        android:layout_width="47dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="248dp"
+        android:layout_marginRight="62dp"
+        android:background="@drawable/ic_baseline_volume_up_24" />
+
+    <ImageButton
+        android:id="@+id/bookmark"
+        android:layout_width="47dp"
+        android:layout_height="52dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="246dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/ic_baseline_bookmark_border" />
+
+    <TextView
+        android:id="@+id/textView_meaningWord"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@id/bookmark"
+        android:layout_marginTop="56dp"
+
+        android:padding="15dp"
+        android:textColor="#230329"
+        android:textSize="18sp"
+        tools:text="hi everyBody and Welcome to my application and wish best time in  my Dictionary" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFB698C5"
+        app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.fragment.InsertFragment"
+    >
+
+    <TextView
+        android:id="@+id/title_insert"
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="398dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="-14dp"
+        android:fontFamily="@font/architects_daughter"
+        android:padding="20dp"
+        android:text="@string/add_new_word_to_dictionary"
+        android:textColor="#380242"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/arabic_form_insert"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_insert"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="20dp"
+android:textColorHint="#380242"
+        android:hint="Arabic"
+        app:boxStrokeColor="#530B4D"
+        app:hintTextColor="#530B4D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/arabic_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/english_form_insert"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arabic_form_insert"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="82dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="English"
+        android:textColorHint="#380242"
+
+        app:boxStrokeColor="#530B4D"
+        app:hintTextColor="#530B4D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/english_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/french_form_insert"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/english_form_insert"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#380242"
+
+        android:hint="French"
+        app:boxStrokeColor="#530B4D"
+        app:hintTextColor="#530B4D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/french_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/persian_form_insert"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/french_form_insert"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Persian"
+        app:boxStrokeColor="#530B4D"
+        android:textColorHint="#380242"
+        app:hintTextColor="#530B4D">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/persian_insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+
+        android:id="@+id/btn_cancel_insert"
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="370dp"
+        android:background="#FFB698C5"
+        android:fontFamily="sans-serif-black"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="#C6B6E4" />
+
+    <Button
+        android:id="@+id/btn_save_insert"
+
+        android:layout_width="111dp"
+        android:layout_height="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+
+
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="6dp"
+        android:background="#FFB698C5"
+        android:fontFamily="sans-serif-black"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="#C6B6E4" />
+
+    <View
+        android:layout_width="198dp"
+        android:layout_height="185dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="-73dp"
+        android:layout_marginTop="-73dp"
+        android:background="@drawable/ic_blobpurpol" />
+
+    <ImageView
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/title_insert"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/ic_united_arab_emirates" />
+
+    <ImageView
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/arabic_form_insert"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/ic_united_states" />
+    <ImageView
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/english_form_insert"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/ic_french_polynesia" />
+    <ImageView
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_below="@id/french_form_insert"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/ic_iran" />
+
+
+
+
+
+</RelativeLayout>

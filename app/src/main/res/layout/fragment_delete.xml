@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.fragment.deleteFragment">
+
+   <View
+       android:layout_width="136dp"
+       android:layout_height="133dp"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentTop="true"
+       android:layout_marginLeft="4dp"
+       android:layout_marginTop="63dp"
+       android:background="@drawable/ic_baseline_delete_24" />
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="63dp"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentRight="true"
+       android:layout_marginTop="112dp"
+       android:layout_marginRight="24dp"
+       android:fontFamily="@font/alfa_slab_one"
+       android:text="The Word Is Deleted?"
+       android:textColor="#FFB698C5"
+       android:textSize="30dp" />
+</RelativeLayout>
